@@ -39,20 +39,18 @@ export default function HeaderDeslogado() {
 
     return (
         <div>
-            <div className="bg-primaria md:px-20 px-6 md:py-3 py-2 flex flex-row-reverse sm:flex-row font-poppins justify-between items-center text-preto">
-                <div className="sm:hidden flex">
-                    <button onClick={() => setNavAberta(true)}>Menu</button>
-                </div>
+            <div className="bg-verde-header sm:hidden md:px-20 px-6 md:py-3 py-2 flex flex-row-reverse sm:flex-row font-poppins justify-between items-center text-preto">
+                <button onClick={() => setNavAberta(true)}>Menu</button>
             </div>
 
 
-            <div className="bg-terciaria flex max-sm:hidden flex-row justify-center">
-                <div className="font-poppins flex flex-row justify-between md:gap-12 gap-2 py-3">
-                    <div className="underline-offset-4 decoration-preto hover:underline md:text-sm text-[0.78rem] cursor-pointer" onClick={() => push("/produtos")} >Produtos</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline md:text-sm text-[0.78rem] cursor-pointer" onClick={() => push("/informacoesServicos")} >Serviços</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline md:text-sm text-[0.78rem] cursor-pointer" onClick={() => push("/lojas")} >Lojas</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline md:text-sm text-[0.78rem] cursor-pointer" onClick={() => push("/planos")} >Planos</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline md:text-sm text-[0.78rem] cursor-pointer" onClick={() => push("/contato")}>Contato</div>
+            <div className="bg-verde-header flex max-sm:hidden flex-row items-center py-6 pl-36">
+                <div className="font-poppins text-branco uppercase flex flex-row gap-12 text-sm">
+                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/produtos")} >Início</div>
+                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/informacoesServicos")} >Visitação</div>
+                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/lojas")} >História</div>
+                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/planos")} >Geografia</div>
+                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/contato")}>Cultura</div>
                 </div>
             </div>
 
