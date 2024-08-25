@@ -39,18 +39,13 @@ export default function HeaderDeslogado() {
 
     return (
         <div>
-            <div className="bg-verde-header sm:hidden md:px-20 px-6 md:py-3 py-2 flex flex-row-reverse sm:flex-row font-poppins justify-between items-center text-preto">
-                <button onClick={() => setNavAberta(true)}>Menu</button>
-            </div>
-
-
-            <div className="bg-verde-header flex max-sm:hidden flex-row items-center py-6 pl-36">
+            <div className="bg-verde-header flex flex-row justify-center items-center py-6">
                 <div className="font-poppins text-branco uppercase flex flex-row gap-12 text-sm">
-                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/produtos")} >Início</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/informacoesServicos")} >Visitação</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/lojas")} >História</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/planos")} >Geografia</div>
-                    <div className="underline-offset-4 decoration-preto hover:underline cursor-pointer" onClick={() => push("/contato")}>Cultura</div>
+                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("./")} >Início</div>
+                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Visitacao")} >Visitação</div>
+                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Historia")} >História</div>
+                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Geografia")} >Geografia</div>
+                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Cultura")}>Cultura</div>
                 </div>
             </div>
 
