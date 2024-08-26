@@ -1,4 +1,5 @@
 'use client'
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
 import { useRouter } from "next/navigation"
 
 import { useEffect, useRef, useState } from "react";
@@ -40,7 +41,7 @@ export default function HeaderDeslogado() {
     return (
         <div>
             <div className="bg-verde-header flex flex-row justify-center items-center py-6">
-                <div className="font-poppins text-branco uppercase flex flex-row gap-12 text-sm">
+                <div className="font-poppins text-branco uppercase md:flex flex-row gap-12 text-sm">
                     <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("./")} >Início</div>
                     <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Visitacao")} >Visitação</div>
                     <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Historia")} >História</div>
@@ -48,6 +49,24 @@ export default function HeaderDeslogado() {
                     <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Cultura")}>Cultura</div>
                 </div>
             </div>
+
+            <Dropdown>
+                <DropdownTrigger>
+                    <Button
+                        variant="bordered"
+                    >
+                        Open Menu
+                    </Button>
+                </DropdownTrigger>
+                <DropdownMenu aria-label="Static Actions">
+                    <DropdownItem key="new">New file</DropdownItem>
+                    <DropdownItem key="copy">Copy link</DropdownItem>
+                    <DropdownItem key="edit">Edit file</DropdownItem>
+                    <DropdownItem key="delete" className="text-danger" color="danger">
+                        Delete file
+                    </DropdownItem>
+                </DropdownMenu>
+            </Dropdown>
 
             {
                 navAberta && (

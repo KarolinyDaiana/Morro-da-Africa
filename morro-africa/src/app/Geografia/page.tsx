@@ -6,8 +6,8 @@ export default function Geografia() {
     return (
         <main className="flex min-h-screen w-full flex-col">
             <HeaderDeslogado />
-            <section className="relative w-full border-b-2 pt-20 flex flex-col items-center border-verde-header">
-                <p className="w-full text-center absolute top-18 left-1/2 transform -translate-x-1/2 font-titulo text-[4rem] grande:text-[5.5rem] font-outline-1 text-transparent">Geografia do morro</p>
+            <section className="bg-sky-200 relative w-full pt-8 md:pt-20 flex flex-col items-center">
+                <p className="w-full text-center absolute top-18 left-1/2 transform -translate-x-1/2 font-titulo text-[2rem] md:text-[4rem] lg:text-[5.5rem] font-outline-1 text-transparent">Geografia do morro</p>
                 <div className="w-[90%] m-auto">
                     <img src="./morro.svg" className="w-full" alt="Descrição da imagem" />
                 </div>
