@@ -8,7 +8,7 @@ export default function Home() {
       <HeaderDeslogado />
       <section className="min-h-[300px] sm:min-h-[405px] bg-[url('/bg-inicio.png')] items-center justify-end flex flex-col">
         <div className="py-4 flex flex-col items-center">
-          <p className="">Morro da África</p>
+          <p className="font-titulo text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[5.5rem] font-outline-2 text-transparent">Morro da África</p>
           <p className="px-8 text-center font-poppins sm:text-lg font-light  text-branco">Imigração e Protagonismo Negro em Jaraguá do Sul</p>
           <FaAngleDown color="#F5F5F5" size={"1.5rem"} className="animate-bounce" />
         </div>

@@ -12,8 +12,8 @@ export default function Visitacao() {
             <section className="flex flex-col -mt-10">
                 <p className="translate-y-[8rem] -translate-x-[18rem] z-30 text-end font-titulo text-[3rem] sm:text-[4rem] lg:text-[5.5rem] font-outline-4 text-transparent">VISITAÇÃO</p>
                 <div className="flex flex-row gap-10">
-                    <img className="drop-shadow-lg w-[30rem] -rotate-2 z-10 translate-x-[14rem]" src="./parque1.jpg" />
-                    <img className="drop-shadow-lg w-[30rem] rotate-6 z-20 translate-x-[5rem] translate-y-[10rem]" src="./parque2.jpg" />
+                    <img className="drop-shadow-lg w-[30rem] hover:-rotate-6 duration-150 -rotate-2 z-10 translate-x-[14rem]" src="./parque1.jpg" />
+                    <img className="drop-shadow-lg w-[30rem] hover:rotate-3 duration-150 rotate-6 z-20 translate-x-[5rem] translate-y-[10rem]" src="./parque2.jpg" />
                 </div>
             </section>
 
@@ -41,10 +41,10 @@ export default function Visitacao() {
 10h30 - apresentação
 11h - brincadeiras africanas
 12h - retorno */}
-                <Card className="flex flex-col justify-center w-[10rem] p-2 rounded-lg border border-slate-900 bg-[#447944]">
+                <Card className="flex flex-col justify-center w-[10rem] px-2 py-4 rounded-lg border border-slate-900 bg-[#447944]">
                     <CardHeader className="flex flex-col">
                         <h4 className="font-bold">08h00m</h4>
-                        <p>Saída da escola</p>
+                        <p className="text-sm text-center">Saída da escola</p>
                     </CardHeader>
                     <div className="h-[1px] bg-slate-900"></div>
                     <CardBody className="flex flex-row">
