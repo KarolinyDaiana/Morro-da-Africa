@@ -45,7 +45,7 @@ export default function HeaderDeslogado() {
     };
 
     return (
-        <Navbar shouldHideOnScroll className="bg-verde-header w-full font-poppins uppercase text-branco text-sm gap-12 flex flex-row justify-center items-center py-6">
+        <Navbar shouldHideOnScroll className="bg-verde-header w-full font-poppins uppercase text-branco text-sm gap-12 flex flex-row justify-center items-center px-4 py-6">
             <NavbarContent className="hidden sm:flex gap-4 items-center w-full" justify="center">
                 <NavbarItem isActive>
                     <Link href="./" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">

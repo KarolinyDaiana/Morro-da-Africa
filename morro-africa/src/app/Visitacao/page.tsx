@@ -9,31 +9,31 @@ export default function Visitacao() {
         <main className="flex min-h-screen w-full flex-col">
             <HeaderDeslogado />
 
-            <section className="flex flex-col -mt-10">
-                <p className="translate-y-[8rem] -translate-x-[18rem] z-30 text-end font-titulo text-[3rem] sm:text-[4rem] lg:text-[5.5rem] font-outline-4 text-transparent">VISITAÇÃO</p>
-                <div className="flex flex-row gap-10">
-                    <img className="drop-shadow-lg w-[30rem] hover:-rotate-6 duration-150 -rotate-2 z-10 translate-x-[14rem]" src="./parque1.jpg" />
-                    <img className="drop-shadow-lg w-[30rem] hover:rotate-3 duration-150 rotate-6 z-20 translate-x-[5rem] translate-y-[10rem]" src="./parque2.jpg" />
+            <section className="flex flex-col -mt-10 items-center">
+                <p className="translate-y-[15rem] lg:translate-y-[8rem] -translate-x-[2rem] lg:-translate-x-[18rem] z-30 lg:text-end font-titulo text-[3rem] sm:text-[4rem] lg:text-[5.5rem] font-outline-4 text-transparent">VISITAÇÃO</p>
+                <div className="flex flex-col gap-10">
+                    <img className="drop-shadow-lg w-[10rem] md:w-[20rem] lg:w-[25rem] hover:-rotate-6 duration-150 -rotate-2 z-10 -translate-x-[3rem] lg:translate-x-[14rem]" src="./parque1.jpg" />
+                    <img className="drop-shadow-lg w-[10rem] md:w-[20rem] lg:w-[25rem] hover:rotate-3 duration-150 rotate-6 z-20 max-sm:-translate-y-[3rem] translate-x-[2.5rem] lg:translate-x-[5rem]" src="./parque2.jpg" />
                 </div>
             </section>
 
-            <section className="py-20 mt-24 gap-2 sm:gap-4 w-[75%] m-auto flex flex-col">
+            <section className="py-0 lg:py-20 mt-8 lg:mt-24 gap-2 sm:gap-4 w-[80%] sm:w-[75%] m-auto flex flex-col">
                 <div className="flex flex-col gap-2">
                     <h3 className="font-bold text-lg sm:text-xl">Parque Linear Via Verde</h3>
-                    <p className="text-sm sm:text-md">O Parque Linear Via Verde é um projeto de infraestrutura urbana em Jaraguá do Sul, Santa Catarina, que visa integrar áreas verdes e proporcionar mais opções de lazer e mobilidade para a população. Ele está situado ao longo do Rio Itapocu, abrangendo uma faixa de terreno paralela ao curso d'água. A proposta do parque é criar um espaço de convivência e atividades ao ar livre, com foco na preservação ambiental e na melhoria da qualidade de vida dos habitantes.</p>
+                    <p className="text-sm text-justify sm:text-md">O Parque Linear Via Verde é um projeto de infraestrutura urbana em Jaraguá do Sul, Santa Catarina, que visa integrar áreas verdes e proporcionar mais opções de lazer e mobilidade para a população. Ele está situado ao longo do Rio Itapocu, abrangendo uma faixa de terreno paralela ao curso d'água. A proposta do parque é criar um espaço de convivência e atividades ao ar livre, com foco na preservação ambiental e na melhoria da qualidade de vida dos habitantes.</p>
                 </div>
                 <div className="bg-verde-header py-3 px-4 w-fit rounded-full">
                     <Link href="https://maps.app.goo.gl/BPDdip1iRypS6pT68">
-                        <div className="flex gap-4 flex-row items-center">
+                        <div className="flex gap-2 sm:gap-4 flex-row items-center">
                             <FaLocationDot color="#f5f5f5" size={20} className="" />
-                            <p className="text-branco text-sm font-light">R. Pref. Victor Bauer - Ilha da Figueira</p>
+                            <p className="text-branco text-xs sm:text-sm font-light">R. Pref. Victor Bauer - Ilha da Figueira</p>
                             <FaAngleRight color="#f5f5f5" className="duration-200 hover:translate-x-2" />
                         </div>
                     </Link>
                 </div>
             </section>
 
-            <section className="grid grid-cols-6">
+            <section className="hidden grid-cols-6">
                 {/* //09/08 - visita técnica
 8h - saída da escola
 9h - palestra
