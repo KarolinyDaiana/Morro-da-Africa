@@ -6,17 +6,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col">
       <HeaderDeslogado />
-      <section className="min-h-[405px] bg-[url('/bg-inicio.png')] items-center justify-end flex flex-col">
+      <section className="min-h-[300px] sm:min-h-[405px] bg-[url('/bg-inicio.png')] items-center justify-end flex flex-col">
         <div className="py-4 flex flex-col items-center">
-          <p className="font-titulo text-[5.5rem] font-outline-2 text-transparent">Morro da África</p>
-          <p className="font-poppins text-lg font-light -mt-4 text-branco">Imigração e Protagonismo Negro em Jaraguá do Sul</p>
+          <p className="">Morro da África</p>
+          <p className="px-8 text-center font-poppins sm:text-lg font-light  text-branco">Imigração e Protagonismo Negro em Jaraguá do Sul</p>
           <FaAngleDown color="#F5F5F5" size={"1.5rem"} className="animate-bounce" />
         </div>
       </section>
 
-      <section className="py-20 gap-4 w-[75%] m-auto flex flex-col items-center">
-        <h3 className="font-bold text-xl">A história não contada</h3>
-        <p className="text-center text-md">Lorem ipsum dolor sit amet consectetur.ate semper dignissim sit gravida porta justo. Enim a nullam urna etiam ut pretium cursus nunc. Malecursus neque amet. Viverra euismod suspendisse vulputate amet diam ridiculus sdasuuna ininasns.</p>
+      <section className="py-20 gap-2 sm:gap-4 w-[75%] m-auto flex flex-col items-center">
+        <h3 className="font-bold text-lg sm:text-xl">A história não contada</h3>
+        <p className="text-center text-sm sm:text-md">Lorem ipsum dolor sit amet consectetur.ate semper dignissim sit gravida porta justo. Enim a nullam urna etiam ut pretium cursus nunc. Malecursus neque amet. Viverra euismod suspendisse vulputate amet diam ridiculus sdasuuna ininasns.</p>
       </section>
 
       <section className="m-auto items-center flex flex-row bg-verde-header">

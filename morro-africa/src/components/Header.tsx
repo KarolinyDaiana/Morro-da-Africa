@@ -1,8 +1,14 @@
 'use client'
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { useRouter } from "next/navigation"
 
 import { useEffect, useRef, useState } from "react";
+import { BiWorld } from "react-icons/bi";
+import { BsHouseDoor } from "react-icons/bs";
+import { FiBookOpen } from "react-icons/fi";
+import { IoMenu } from "react-icons/io5";
+import { LuMusic4 } from "react-icons/lu";
+import { PiPark } from "react-icons/pi";
 
 export default function HeaderDeslogado() {
     const { push } = useRouter();
@@ -39,88 +45,146 @@ export default function HeaderDeslogado() {
     };
 
     return (
-        <div>
-            <div className="bg-verde-header flex flex-row justify-center items-center py-6">
-                <div className="font-poppins text-branco uppercase md:flex flex-row gap-12 text-sm">
-                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("./")} >Início</div>
-                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Visitacao")} >Visitação</div>
-                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Historia")} >História</div>
-                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Geografia")} >Geografia</div>
-                    <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Cultura")}>Cultura</div>
-                </div>
-            </div>
+        <Navbar shouldHideOnScroll className="bg-verde-header w-full font-poppins uppercase text-branco text-sm gap-12 flex flex-row justify-center items-center py-6">
+            <NavbarContent className="hidden sm:flex gap-4 items-center w-full" justify="center">
+                <NavbarItem isActive>
+                    <Link href="./" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">
+                        Início
+                    </Link>
+                </NavbarItem>
 
-            <Dropdown>
-                <DropdownTrigger>
-                    <Button
-                        variant="bordered"
-                    >
-                        Open Menu
-                    </Button>
-                </DropdownTrigger>
-                <DropdownMenu aria-label="Static Actions">
-                    <DropdownItem key="new">New file</DropdownItem>
-                    <DropdownItem key="copy">Copy link</DropdownItem>
-                    <DropdownItem key="edit">Edit file</DropdownItem>
-                    <DropdownItem key="delete" className="text-danger" color="danger">
-                        Delete file
-                    </DropdownItem>
-                </DropdownMenu>
-            </Dropdown>
+                <NavbarItem isActive>
+                    <Link href="./Visitacao" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">
+                        Visitação
+                    </Link>
+                </NavbarItem>
 
-            {
-                navAberta && (
-                    <div
-                        className={`${animation ? 'animate-slide-left' : 'animate-slide-rigth'} fixed top-0 left-0 w-full h-full bg-preto opacity-30 z-50 duration-300`}
-                        onClick={() => setNavAberta(false)}
-                    ></div>
-                )
-            }
-            {
-                navAberta && (
-                    <div ref={navRef} className={`z-[100] bg-branco block absolute top-0 left-0 w-full h-fit pb-12 overflow-x-hidden ${animation ? 'animate-slide-left' : 'animate-slide-right'}`}>
-                        <div className="p-6 flex flex-col gap-4">
+                <NavbarItem isActive>
+                    <Link href="./Historia" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">
+                        História
+                    </Link>
+                </NavbarItem>
 
-                            <button className="w-full" onClick={() => setNavAberta(false)}>Fechar</button>
+                <NavbarItem isActive>
+                    <Link href="./Geografia" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">
+                        Geografia
+                    </Link>
+                </NavbarItem>
 
-                            <div className="grid grid-cols-2 gap-4 pl-2">
-                                <div className="flex flex-col font-poppins text-preto">
-                                    <h3 className="font-semibold text-lg">Conta</h3>
+                <NavbarItem isActive>
+                    <Link href="./Cultura" aria-current="page" className="underline-offset-4 decoration-branco hover:underline cursor-pointer">
+                        Cultura
+                    </Link>
+                </NavbarItem>
+            </NavbarContent>
+            <NavbarContent className="sm:hidden flex">
+                <Dropdown className="bg-verde-header p-4">
+                    <DropdownTrigger>
+                        <Button isIconOnly>
+                            <IoMenu color="#F5F5F5" size={30} />
+                        </Button>
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Static Actions" className="bg-verde-header p-3 rounded-lg">
+                        <DropdownItem
+                            startContent={<BsHouseDoor />}
+                            className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+                            key="home">
+                            Início
+                        </DropdownItem>
+                        <DropdownItem
+                            startContent={<PiPark />}
+                            className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+                            key="visit">
+                            Visitação
+                        </DropdownItem>
 
-                                    <div className="flex flex-col w-full">
-                                        <a onClick={() => handleLinkClick('/login')} className="hover:underline text-roxo-select font-medium text-sm">Fazer login</a>
-                                        <a onClick={() => handleLinkClick('/cadastro')} className="hover:underline text-roxo-select font-medium text-sm">Cadastrar-se</a>
-                                        <a onClick={() => handleLinkClick('/carrinho')} className="hover:underline text-roxo-select font-medium text-sm">Sacola</a>
-                                    </div>
-                                </div>
+                        <DropdownItem
+                            startContent={<FiBookOpen />}
+                            className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+                            key="history">
+                            História
+                        </DropdownItem>
 
-                                <div className="flex flex-col font-poppins text-preto">
-                                    <h3 className="font-semibold text-lg">Outros</h3>
+                        <DropdownItem
+                            startContent={<BiWorld />}
+                            className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco"
+                            key="geography">
+                            Geografia
+                        </DropdownItem>
 
-                                    <div className="flex flex-col w-full">
-                                        <a onClick={() => handleLinkClick('/contato')} className="hover:underline text-roxo-select font-medium text-sm">Contato</a>
-                                        <a onClick={() => handleLinkClick('/duvidasFrequentes')} className="hover:underline text-roxo-select font-medium text-sm">Dúvidas</a>
-                                        <a onClick={() => handleLinkClick('/sobreNos')} className="hover:underline text-roxo-select font-medium text-sm">Sobre nós</a>
-                                    </div>
-                                </div>
+                        <DropdownItem
+                            startContent={<LuMusic4 />}
+                            className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco"
+                            key="culture">
+                            Cultura
+                        </DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            </NavbarContent>
+        </Navbar>
+        //     <div className="bg-verde-header hidden sm:flex flex-row justify-center items-center py-6">
+        //         <div className="font-poppins text-branco uppercase flex flex-row gap-12 text-sm">
+        //             <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("./")} >Início</div>
+        //             <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Visitacao")} >Visitação</div>
+        //             <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Historia")} >História</div>
+        //             <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Geografia")} >Geografia</div>
+        //             <div className="underline-offset-4 decoration-branco hover:underline cursor-pointer" onClick={() => push("/Cultura")}>Cultura</div>
+        //         </div>
+        //     </div>
 
-                                <div className="flex flex-col font-poppins text-preto">
-                                    <h3 className="font-semibold text-lg">Pet shop</h3>
+        //     <div className="sm:hidden flex bg-verde-header p-4">
+        //         <Dropdown className="sm:hidden flex bg-verde-header p-4">
+        //             <DropdownTrigger>
+        //                 <Button isIconOnly>
+        //                     <IoMenu color="#F5F5F5" size={30} />
+        //                 </Button>
+        //             </DropdownTrigger>
+        //             <DropdownMenu aria-label="Static Actions" className="bg-verde-header p-3 rounded-lg">
+        //                 <DropdownItem
+        //                     startContent={<BsHouseDoor />}
+        //                     className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+        //                     key="home">
+        //                     Início
+        //                 </DropdownItem>
+        //                 <DropdownItem
+        //                     startContent={<PiPark />}
+        //                     className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+        //                     key="visit">
+        //                     Visitação
+        //                 </DropdownItem>
 
-                                    <div className="flex flex-col w-full">
-                                        <a onClick={() => handleLinkClick('/produtos')} className="hover:underline text-roxo-select font-medium text-sm">Produtos</a>
-                                        <a onClick={() => handleLinkClick('/informacoesServicos')} className="hover:underline text-roxo-select font-medium text-sm">Serviços</a>
-                                        <a onClick={() => handleLinkClick('/lojas')} className="hover:underline text-roxo-select font-medium text-sm">Lojas</a>
-                                        <a onClick={() => handleLinkClick('/planos')} className="hover:underline text-roxo-select font-medium text-sm">Planos</a>
-                                    </div>
-                                </div>
-                            </div>
+        //                 <DropdownItem
+        //                     startContent={<FiBookOpen />}
+        //                     className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco flex flex-row gap-2"
+        //                     key="history">
+        //                     História
+        //                 </DropdownItem>
 
-                        </div>
-                    </div>
-                )
-            }
+        //                 <DropdownItem
+        //                     startContent={<BiWorld />}
+        //                     className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco"
+        //                     key="geography">
+        //                     Geografia
+        //                 </DropdownItem>
 
-        </div >
+        //                 <DropdownItem
+        //                     startContent={<LuMusic4 />}
+        //                     className="hover:bg-verde-hover pl-4 pr-16 rounded-sm font-light text-branco"
+        //                     key="culture">
+        //                     Cultura
+        //                 </DropdownItem>
+        //             </DropdownMenu>
+        //         </Dropdown>
+        //     </div>
+
+        //     {
+        //         navAberta && (
+        //             <div
+        //                 className={`${animation ? 'animate-slide-left' : 'animate-slide-rigth'} fixed top-0 left-0 w-full h-full bg-preto opacity-30 z-50 duration-300`}
+        //                 onClick={() => setNavAberta(false)}
+        //             ></div>
+        //         )
+        //     }
+        // </div >
     )
 }

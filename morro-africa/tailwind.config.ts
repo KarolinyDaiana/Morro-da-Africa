@@ -7,17 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      'grande': '1000px',
-      'md': '640px',
-      'lg': '1024px',
-      'xl': '1280px'
-    },
     extend: {
       colors: {
         'preto': '#322828',
         'verde-header': '#264318',
-        'branco': '#F5F5F5'
+        'branco': '#F5F5F5',
+        'verde-hover': '#062C05'
       },
       fontFamily: {
         'poppins': ['Poppins'],
