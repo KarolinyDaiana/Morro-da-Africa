@@ -67,7 +67,7 @@ export default function Visitacao() {
             <section className="pt-6 pb-12 lg:py-0 lg:pb-12 lg:mt-12 gap-2 sm:gap-4 px-8 sm:px-36 m-auto flex flex-col">
                 <div className="flex flex-col gap-2">
                     <h3 className="font-bold text-lg sm:text-xl">Parque Linear Via Verde</h3>
-                    <p className="text-sm text-justify sm:text-base">O Parque Linear Via Verde é um projeto de infraestrutura urbana em Jaraguá do Sul, Santa Catarina, que visa integrar áreas verdes e proporcionar mais opções de lazer e mobilidade para a população. Ele está situado ao longo do Rio Itapocu, abrangendo uma faixa de terreno paralela ao curso d'água. A proposta do parque é criar um espaço de convivência e atividades ao ar livre, com foco na preservação ambiental e na melhoria da qualidade de vida dos habitantes.</p>
+                    <p className="text-sm text-justify sm:text-base">O Parque Linear Via Verde é um projeto de infraestrutura urbana em Jaraguá do Sul, Santa Catarina, que visa integrar áreas verdes e proporcionar mais opções de lazer e mobilidade para a população. Ele está situado ao longo do Rio Itapocu, abrangendo uma faixa de terreno paralela ao curso d&aposágua. A proposta do parque é criar um espaço de convivência e atividades ao ar livre, com foco na preservação ambiental e na melhoria da qualidade de vida dos habitantes.</p>
                 </div>
                 <div className="bg-verde-header py-3 px-4 w-fit rounded-full">
                     <Link href="https://maps.app.goo.gl/BPDdip1iRypS6pT68">
