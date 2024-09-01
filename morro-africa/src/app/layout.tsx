@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Morro da África",
   description: "Site informativo sobre o Morro da África",
+  icons: "favicon.ico"
 };
 
 export default function RootLayout({

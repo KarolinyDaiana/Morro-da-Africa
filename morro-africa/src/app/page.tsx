@@ -1,12 +1,10 @@
-'use client'
 import { FaAngleDown } from "react-icons/fa6";
 import HeaderDeslogado from "../components/Header";
-import { Image } from "@nextui-org/image";
-import { Accordion, AccordionItem, Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import { Card, CardBody, CardHeader } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col bg-gray-100">
+    <body className="flex min-h-screen w-full flex-col bg-gray-100">
       <HeaderDeslogado />
       <section className="min-h-[300px] sm:min-h-[405px] bg-[url('/bg-inicio.png')] items-center justify-end flex flex-col">
         <div className="py-4 flex flex-col items-center">
@@ -52,6 +50,6 @@ export default function Home() {
           </CardBody>
         </Card>
       </section>
-    </main>
+    </body>
   );
 }
