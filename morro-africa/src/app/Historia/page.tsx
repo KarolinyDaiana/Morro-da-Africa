@@ -16,10 +16,10 @@ export default function Historia() {
                 {/* <section className="gap-2 pt-4 flex flex-col py-16 lg:py-0 mt-8 lg:mt-12 px-8 sm:px-36"> */}
                 <h3 className="font-bold text-lg sm:text-xl">História do povoado</h3>
                 <p className="text-sm sm:text-base">
-                    Segundo o livro Memórias do povoado Morro da África e a história dos negros em Jaraguá do Sul. Emílio Carlos Jourdan um engenheiro belga - junto dos negros que auxiliaram na colonização do município de Jaraguá do Sul - firmou um contrato com a Princesa Isabel, para colonizar quatrocentos e trinta hectares dessas terras. Pretendia estabelecer uma usina de açúcar. Para concretizar o projeto, contratou ferreiros, mecânicos, marceneiros, carpinteiros, pedreiros, padeiros, caixeiros e lavradores. Foi encontrada uma relação de trabalhadores trazidos por Jourdan no IBGE. No documento consta “que além desses vieram ainda com o coronel Jourdan mais 35 negros, cujos nomes não foi possível registrar” [...]. E conclui: “O Coronel Emílio Carlos Jourdan chegou a Jaraguá no ano de 1876, em companhia de 60 trabalhadores destinados à lavoura”. (STULZER, 1973, p. 74-75). Os trabalhadores citados foram os primeiros que vieram para Jaraguá. Não há registro sobre a movimentação desses trabalhadores.
+                    Segundo o livro Memórias do povoado Morro da África e a história dos negros em Jaraguá do Sul. Emílio Carlos Jourdan um engenheiro belga - junto dos negros que auxiliaram na colonização do município de Jaraguá do Sul - firmou um contrato com a Princesa Isabel, para colonizar quatrocentos e trinta hectares dessas terras. Pretendia estabelecer uma usina de açúcar. Para concretizar o projeto, contratou ferreiros, mecânicos, marceneiros, carpinteiros, pedreiros, padeiros, caixeiros e lavradores. Foi encontrada uma relação de trabalhadores trazidos por Jourdan no IBGE. No documento consta &quot;que além desses vieram ainda com o coronel Jourdan mais 35 negros, cujos nomes não foi possível registrar&quot; [...]. E conclui: &quot;O Coronel Emílio Carlos Jourdan chegou a Jaraguá no ano de 1876, em companhia de 60 trabalhadores destinados à lavoura&quot;. (STULZER, 1973, p. 74-75). Os trabalhadores citados foram os primeiros que vieram para Jaraguá. Não há registro sobre a movimentação desses trabalhadores.
                 </p>
                 <p className="text-sm sm:text-base">
-                    Há afirmativa que com Jourdan “vieram sessenta trabalhadores livres, sendo cinquenta e quatro pretos e seis brancos para montarem o tal engenho de açúcar”. (LEITE, 1988, citado por SABEL, 2003: 36).
+                    Há afirmativa que com Jourdan &quot;vieram sessenta trabalhadores livres, sendo cinquenta e quatro pretos e seis brancos para montarem o tal engenho de açúcar&quot;. (LEITE, 1988, citado por SABEL, 2003: 36).
                     Na relação trazida há o nome de vários trabalhadores negros, que permaneceram aqui e seus descendentes, ainda hoje, fazem a história de Jaraguá do Sul.
                     Havia escravos entre os trabalhadores de Jourdan? Em 1876, a escravidão ainda existia no Brasil. Eles eram a mão de obra nos engenhos, nas fazendas, nas armações baleeiras, nas estivas dos portos, nas casas-grandes e em tantos outros trabalhos braçais.
                 </p>
@@ -46,7 +46,7 @@ export default function Historia() {
                     </div>
 
                     <div className="p-2 bg-opacity-30 border border-verde-hover rounded-lg w-full gap-2 flex flex-col items-center">
-                        <p className="text-sm sm:text-base text-justify">Joaquim Francisco de Paulo: único pedreiro “profissional” (SILVA, 1976, p. 51) trazido por Jourdan. Nasceu no oceano Atlântico, enquanto seus pais eram trazidos em navio negreiro da África para o Brasil.</p>
+                        <p className="text-sm sm:text-base text-justify">Joaquim Francisco de Paulo: único pedreiro &quot;profissional&quot; (SILVA, 1976, p. 51) trazido por Jourdan. Nasceu no oceano Atlântico, enquanto seus pais eram trazidos em navio negreiro da África para o Brasil.</p>
                     </div>
 
                     <div className="p-2 bg-opacity-30 border border-verde-hover rounded-lg w-full gap-2 flex flex-col items-center">
@@ -64,7 +64,7 @@ export default function Historia() {
             </section>
 
             <section className="gap-2 pt-4 flex flex-col py-16 lg:py-0 mt-8 lg:mt-12 mb-16 px-8 sm:px-36">
-                <h3 className="font-bold text-lg sm:text-xl">Fotos retiradas do livro "Memórias do povoado Morro da África e a história dos negros em Jaraguá do Sul"</h3>
+                <h3 className="font-bold text-lg sm:text-xl">Fotos retiradas do livro &quot;Memórias do povoado Morro da África e a história dos negros em Jaraguá do Sul&quot;</h3>
 
                 <div className="flex flex-wrap gap-6">
                     <div className="p-2 bg-opacity-30 bg-green-800 rounded-lg w-fit">

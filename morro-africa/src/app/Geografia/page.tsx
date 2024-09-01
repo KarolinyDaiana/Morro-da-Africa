@@ -42,7 +42,7 @@ export default function Geografia() {
 
             <section className="py-16 lg:py-0 mt-8 lg:mt-12 flex flex-col gap-4 pb-12 px-8 sm:px-36">
                 <h3 className="font-bold text-lg sm:text-xl">Informações básicas sobre o Morro Boa Vista</h3>
-                <p className="text-sm sm:text-base">O morro possui 896 metros de altura, com o tipo de relevo "serra". A vegetação de mata atlântica é nativa, preservada. A região possui o Rio Jaraguá como principal, o qual tem rumo aos pés do morro.</p>
+                <p className="text-sm sm:text-base">O morro possui 896 metros de altura, com o tipo de relevo &quot;serra&quot;. A vegetação de mata atlântica é nativa, preservada. A região possui o Rio Jaraguá como principal, o qual tem rumo aos pés do morro.</p>
             </section>
 
             <section className="gap-2 pt-4 flex flex-col py-16 lg:py-0 mt-8 lg:mt-12 pb-12 px-8 sm:px-36">

@@ -21,7 +21,7 @@ export default function Cultura() {
 
             <section className="gap-4 pb-12 pt-4 flex flex-col py-16 lg:py-0 mt-8 px-8 sm:px-36">
                 <h3 className="font-bold text-lg sm:text-xl">Labirinto</h3>
-                <p className="text-sm sm:text-base">Originária de Moçambique,na adaptação do jogo, os alunos desenham um labirinto no chão e se dividem em dois grupos. Um representante de cada grupo compete em "par ou ímpar" ou "pedra, papel e tesoura". Cada vitória permite que o grupo avance um passo no labirinto. O primeiro grupo a chegar ao final do labirinto vence.</p>
+                <p className="text-sm sm:text-base">Originária de Moçambique,na adaptação do jogo, os alunos desenham um labirinto no chão e se dividem em dois grupos. Um representante de cada grupo compete em &quot;par ou ímpar&quot; ou &quot;pedra, papel e tesoura&quot;. Cada vitória permite que o grupo avance um passo no labirinto. O primeiro grupo a chegar ao final do labirinto vence.</p>
                 <div className="flex flex-wrap gap-6">
                     <div className="p-2 bg-opacity-30 bg-green-800 rounded-lg w-fit">
                         <img src="./labirinto1.jpg" className="w-[20rem] rounded-lg" />
@@ -42,12 +42,12 @@ export default function Cultura() {
 
             <section className="gap-2 pt-4 flex flex-col py-16 lg:py-0 mt-8 lg:mt-12 px-8 sm:px-36">
                 <h3 className="font-bold text-lg sm:text-xl">Terra-mar</h3>
-                <p className="text-sm sm:text-base">Originária de Moçambique, no Brasil, há um jogo semelhante chamado “Vivo ou morto”. Uma linha é desenhada no chão com os lados marcados como “terra” e “mar”. As crianças começam no lado da terra e devem pular para o lado correspondente ao comando que ouviram: “mar” ou “terra”. Quem pular para o lado errado é eliminado, e o último a permanecer no jogo é o vencedor.</p>
+                <p className="text-sm sm:text-base">Originária de Moçambique, no Brasil, há um jogo semelhante chamado &quot;Vivo ou morto&quot;. Uma linha é desenhada no chão com os lados marcados como &quot;terra&quot; e &quot;mar&quot;. As crianças começam no lado da terra e devem pular para o lado correspondente ao comando que ouviram: &quot;mar&quot; ou &quot;terra&quot;. Quem pular para o lado errado é eliminado, e o último a permanecer no jogo é o vencedor.</p>
             </section>
 
             <section className="gap-2 pt-4 flex flex-col py-16 lg:py-0 mt-8 lg:mt-12 px-8 sm:px-36">
                 <h3 className="font-bold text-lg sm:text-xl">Reloginho</h3>
-                <p className="text-sm sm:text-base">Originária da Nigéria, a brincadeira Pula Feijão, que aqui no Brasil é conhecida como "reloginho", uma criança gira uma corda com um saco de feijão amarrado na ponta, que pode ser substituído por outro objeto,  enquanto as outras, dispostas em círculo, pulam a corda para não serem atingidas.</p>
+                <p className="text-sm sm:text-base">Originária da Nigéria, a brincadeira Pula Feijão, que aqui no Brasil é conhecida como &quot;reloginho&quot;, uma criança gira uma corda com um saco de feijão amarrado na ponta, que pode ser substituído por outro objeto,  enquanto as outras, dispostas em círculo, pulam a corda para não serem atingidas.</p>
                 <div className="flex flex-wrap gap-6">
                     <div className="p-2 bg-opacity-30 bg-green-800 rounded-lg w-fit">
                         <img src="./terramar.jpeg" className="w-[20rem] rounded-lg" />
